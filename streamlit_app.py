@@ -43,7 +43,7 @@ try:
 #streamlit.write('The user entered ', fruit_choice)
 
 #import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json()) #jst writes the data to the screen
 
 #don't run anything past here while we troubleshoot
