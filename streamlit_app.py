@@ -31,15 +31,13 @@ def get_fruityvice_data(this_fruit_choice):
     return fruityvice_normalized
   
 # New Section to display Fruityvice api response
-streamlit.header('Fruityvice Fruit Advice!')
-try:
-   fruit_choice = streamlit.text_input('What fruit would you like information about?')
-   if not fruit_choice:
-      streamlit.error("Please select a fruit to get information.")
-   else:
-    back_from_function = get_fruityvice_data(fruit_choice)
-    streamlit.dataframe(back_from_function) 
-    streamlit.header("The fruit load list contains:")
+streamlit.header("Fruityvice Fruit Advice!") 
+try: fruit_choice = streamlit.text_input('What fruit would you like information about?') 
+if not fruit_choice: streamlit.error("Please select a fruit to get information.") 
+else: back_from_function = get_fruityvice_data(fruit_choice) 
+streamlit.dataframe(back_from_fuction)
+
+streamlit.header("The fruit load list contains:")
 #streamlit.write('The user entered ', fruit_choice)
 
 #import requests
