@@ -39,6 +39,7 @@ try:
    else:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function) 
+    streamlit.header("The fruit load list contains:")
 #streamlit.write('The user entered ', fruit_choice)
 
 #import requests
@@ -49,7 +50,7 @@ try:
 #streamlit.stop()
 
 #import snowflake.connector
-   streamlit.header("The fruit load list contains:")
+#streamlit.header("The fruit load list contains:")
     
 #snowflake-related functions
 def get_fruit_load_list():
