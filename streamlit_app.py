@@ -39,6 +39,7 @@ if not fruit_choice:
 else:
     back_from_function=get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
+
 #streamlit.write('The user entered ', fruit_choice)
 
 #import requests
