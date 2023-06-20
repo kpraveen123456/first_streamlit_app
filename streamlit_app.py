@@ -39,6 +39,22 @@ try:
    else:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
+except URLError as e:  
+  streamlit.error()
+
+ 
+
+#streamlit.stop()
+
+ 
+
+#import snowflake.connector
+
+ 
+
+streamlit.header("View Our Fruit List - Add Your Favourites")
+#Snowflake-related functions
+def get_fruit_load_list():
 
 #streamlit.write('The user entered ', fruit_choice)
 
@@ -50,12 +66,11 @@ try:
 #streamlit.stop()
 
 #import snowflake.connector
-# New Section to display Fruityvice api response
-streamlit.header('Fruityvice Fruit Advice!')
+
 
 #streamlit.header("The fruit load list contains:")
 #snowflake-related functions
-def get_fruit_load_list():
+#def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
         my_cur.execute("select * from fruit_load_list")
         return my_cur.fetchall()
